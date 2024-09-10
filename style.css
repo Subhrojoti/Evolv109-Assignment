@@ -58,17 +58,6 @@ body {
   margin: auto;
   height: 500px;
 }
-@media (max-width: 1774px) {
-  .heroMain {
-    flex-direction: column !important; /* Switch to column layout */
-    height: auto; /* Adjust height as needed for column layout */
-  }
-}
-@media (max-width: 1774px) {
-  .dynamic {
-    display: none;
-  }
-}
 
 /* Company Icons section */
 
@@ -278,4 +267,20 @@ footer {
     #2badff -20.88%,
     #0c2949 52.26%
   ) !important;
+}
+
+/* Responsive */
+
+/* Hero section */
+
+@media (max-width: 1774px) {
+  .heroMain {
+    flex-direction: column !important; /* Switch to column layout */
+    height: auto; /* Adjust height as needed for column layout */
+  }
+}
+@media (max-width: 1774px) {
+  .dynamic {
+    display: none;
+  }
 }
