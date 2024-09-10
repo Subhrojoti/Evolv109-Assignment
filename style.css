@@ -1,0 +1,281 @@
+html,
+body {
+  margin: 0;
+  padding: 0;
+  font-family: poppins;
+}
+
+/* Nav Section  */
+
+.webLogo {
+  width: 15rem;
+}
+
+.schedule-btn {
+  background-color: #0c2949;
+  color: white;
+}
+
+.navWrapper {
+  width: 100%;
+  margin: auto;
+  background-color: #1c6ba4;
+}
+
+/* Hero Section */
+
+.bannerHeading {
+  font-weight: 700;
+  color: white;
+  max-width: 30rem;
+  margin-bottom: 50px;
+}
+
+.info p {
+  color: rgb(255, 255, 255, 0.73);
+  font-size: 24px;
+  font-weight: 500;
+  max-width: 654px;
+}
+
+#skew1 .content {
+  padding-top: 40px;
+}
+
+.dynamicImg {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-grow: 1;
+  color: white;
+  position: absolute;
+  width: 1000px;
+  bottom: -10px;
+}
+
+.heroMain {
+  max-width: 1600px;
+  margin: auto;
+  height: 500px;
+}
+@media (max-width: 1774px) {
+  .heroMain {
+    flex-direction: column !important; /* Switch to column layout */
+    height: auto; /* Adjust height as needed for column layout */
+  }
+}
+@media (max-width: 1774px) {
+  .dynamic {
+    display: none;
+  }
+}
+
+/* Company Icons section */
+
+.logo {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 70px;
+  filter: grayscale(100%);
+  margin-top: 40px;
+}
+
+.logoImg {
+  width: 120px;
+  color: #1c6ba4;
+}
+
+.textCompany {
+  font-size: 22px;
+  color: #2badff;
+}
+
+.book-btn {
+  background-color: #0c2949;
+  color: white;
+  text-decoration: none;
+  width: 323px;
+  height: 63px;
+  border: 1px solid;
+}
+
+.book-btn:hover {
+  background-color: white;
+  color: #0c2949;
+  text-decoration: none;
+  width: 323px;
+  height: 63px;
+  border: 1px solid #0c2949;
+}
+
+.trustedCompany {
+  font-size: 45px !important;
+  font-weight: 600 !important;
+  line-height: 64px !important;
+  color: #282938 !important;
+}
+
+/* Competetive Advantage Section */
+
+.compAdv h3 {
+  font-size: 45px;
+  font-weight: 600;
+  color: white;
+}
+
+.advList {
+  padding: 20px;
+  background-color: rgb(255, 255, 255, 4%);
+  border: 0.5px solid rgb(255, 255, 255, 48%);
+  color: white;
+
+  font-weight: 500;
+  font-size: 20px;
+}
+
+#skew3 .compAdv .advList table tbody tr td:first-child {
+  padding-left: 50px; /* Adjust padding as needed */
+}
+
+tbody tr {
+  text-align: left;
+  border-radius: 10px;
+}
+
+tbody tr:nth-child(even) {
+  background: rgba(186, 215, 232, 0.29);
+  border-radius: 20px;
+}
+
+tbody tr td:first-child {
+  border-top-left-radius: 10px;
+  border-bottom-left-radius: 10px;
+}
+
+tbody tr td:last-child {
+  border-top-right-radius: 10px;
+  border-bottom-right-radius: 10px;
+}
+
+/* Advantage Section */
+
+.btn-speak {
+  border: none;
+  background: rgba(43, 173, 255, 1);
+}
+
+.LearnMore {
+  background: rgba(12, 41, 73, 1) !important;
+  width: 189px;
+  opacity: 0px;
+  font-weight: 500;
+  font-size: 20px;
+  padding: 10px 10px;
+  border-radius: 100px;
+}
+
+.blankCard {
+  width: 567px;
+  height: 504px;
+  background-color: rgba(245, 245, 245, 1);
+  opacity: 0px;
+}
+
+/*  */
+.schedule-btn:hover {
+  border: 1px solid #0c2949;
+}
+
+.product {
+  font-weight: 500;
+}
+
+.cus-div {
+  width: 100%;
+  position: relative;
+}
+
+#skew1 {
+  background-color: #1c6ba4;
+  -webkit-background-size: cover;
+  background-size: cover;
+  background-position: center center;
+  z-index: 10;
+}
+
+#skew2 {
+  background: #fff;
+  z-index: 9;
+}
+#skew3 {
+  background: linear-gradient(223.86deg, #2badff -27.36%, #0c2949 61.07%);
+
+  z-index: 8;
+}
+#skew4 {
+  background: #fff;
+  z-index: 7;
+}
+#skew5 {
+  background: #c2c2c2;
+  z-index: 6;
+}
+
+.cus-div::after {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background: inherit;
+  z-index: -1;
+  bottom: 0;
+  content: "";
+}
+
+#skew1:after,
+#skew2:after,
+#skew4:after,
+#skew3:after {
+  transform-origin: right bottom;
+  transform: skewY(-5deg);
+}
+#skew4:after {
+  transform-origin: right bottom;
+  transform: skewY(5deg);
+}
+
+.content {
+  font-weight: bold;
+  text-align: center;
+  padding: 200px 100px 50px;
+  overflow: hidden;
+  display: block;
+  height: auto;
+}
+
+.content h2 {
+  margin: 0;
+  color: black;
+  text-transform: uppercase;
+  font-size: 60px;
+}
+
+.content a {
+  text-decoration: none;
+  color: #fff;
+  background: #039dc8;
+  display: inline-block;
+  font-size: 16px;
+  padding: 10px 25px;
+  margin-top: 20px;
+}
+
+/* Footer */
+
+footer {
+  background: linear-gradient(
+    159.76deg,
+    #2badff -20.88%,
+    #0c2949 52.26%
+  ) !important;
+}

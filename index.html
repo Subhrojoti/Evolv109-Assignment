@@ -1,0 +1,331 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Styled Header with Bootstrap</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+    
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-...your-integrity-hash..." crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <nav class="navWrapper navbar navbar-expand-lg navbar-dark navMain">
+      <div class="container-fluid">
+        <img src="images/webLogo.png" alt="logo" class="webLogo">
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarSupportedContent"
+          aria-controls="navbarSupportedContent"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav ms-auto mb-2 mb-lg-0 d-flex align-items-center">
+            <li class="nav-item">
+              <a
+                class="nav-link active fs-5 product"
+                aria-current="page"
+                href="#"
+                >Products</a
+              >
+            </li>
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="#"
+                >Solutions</a
+              >
+            </li>
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="#"
+                >Subscription</a
+              >
+            </li>
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="#"
+                >Company</a
+              >
+            </li>
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="#"
+                >Contact Us</a
+              >
+            </li>
+            <li class="nav-but">
+              <a href="#" class="btn schedule-btn rounded-pill px-4 ms-4"
+                >Schedule Meeting</a
+              >
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+    <!-- Hero Section -->
+
+    <div class="wrapper">
+      <div id="skew1" class="cus-div">
+        <div class="content">
+          <section class="heroMain mt-4 container-fluid">
+            <div class="d-flex">
+              <div class="info text-start">
+                <h1 class="bannerHeading display-3 font-italic ">Intelligent Pricing and Location IQ</h1>
+                <p>Our solution helps you to find top real estate investments and maximize value through precision pricing, powered by trillions of our proprietary data.</p>
+              </div>
+              <div class="dynamic">
+                <img class="dynamicImg" src="images/Hero Pic.png">
+              </div>
+            </div>
+            <div class="slant"></div>
+          </section>
+        </div>
+      </div>
+<!---------------------------------- Comapnies Section --------------------------------------->
+
+      <div id="skew2" class="cus-div">
+        <div class="content">
+          <p class="textCompany">You are in good company</p>
+          <h2 class="trustedCompany fw-bold">Trusted by +100 Companies</h2>
+          <div class="logo">
+            <img class="logoImg" src="images/logo1.png" />
+            <img class="logoImg" src="images/logo2.jpg" />
+            <img class="logoImg" src="images/logo3.png" />
+            <img class="logoImg" src="images/logo4.png" />
+            <img class="logoImg" src="images/logo5.png" />
+            <img class="logoImg" src="images/logo6.png" />
+            <img class="logoImg" src="images/logo7.png" />
+          </div>
+          <button class="book-btn rounded-pill mt-4">Book A Demo</button>
+        </div>
+      </div>
+<!----------------------------------- Competitive Advantage ------------------------------------>
+      
+<div id="skew3" class="cus-div">
+  <div class="content">
+    <div class="compAdv">
+      <h3 class="mb-5">Competitive Advantages</h3>
+      <div class="advList container">
+        <div class="table-responsive">
+          <table class="table table-borderless text-white">
+            <thead class="text-uppercase">
+              <tr>
+                <th scope="col">-</th>
+                <th scope="col" class="text-center">Other Platforms</th>
+                <th scope="col" class="text-center">PriceEasy</th>
+              </tr>
+            </thead>
+            <tbody>
+              <!-- Loop through advantages data here -->
+              <script>
+                const advantages = [
+                  "Mobility Intelligence for the Site",
+                  "Key Competitors of the Site",
+                  "Locations where Your Customers Shop",
+                  "Market Share, Average Price and Margin by Brand in Trade Area",
+                  "Base Potential of any Site",
+                  "Find Sites with Best Economics by Simulating Millions of Locations",
+                  "Economics for a New Site",
+                  "Underperforming Site Identification",
+                  "Intel on Top Merchandise for a New Location",
+                  "Land Parcel Information for the Site",
+                  "Value of Site Features"
+                ];
+
+                advantages.forEach((adv) => {
+                  document.write(`
+                    <tr>
+                      <td>${adv}</td>
+                      <td class="text-center"><i class="fas fa-check text-success"></i></td>
+                      <td class="text-center"><i class="fas fa-check text-success"></i></td>
+                    </tr>
+                  `);
+                });
+              </script>
+            </tbody>
+          </table>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!------------------------------------------ Advantage Section  ------------------------------------->
+      
+<div id="skew4" class="cus-div">
+        <div class="content ">
+          <div class="d-flex container">
+
+            <div class="text-start d-flex flex-column w-50">
+              <p class="mb-0 fs-4 fw-normal"><i class="fa-solid fa-gas-pump me-2"></i>Industries Served</p>
+              <p class="fs-1">Solutions by Industry</p>
+              <ul class="list-unstyled fs-5 ">
+                <li class="fw-normal pb-1"><strong>Fuel Stations:</strong> Improve Pricing and Site Selection</li>
+                <li class="fw-normal pb-1"><strong>EV Network:</strong> Optimize EV Station Placement</li>
+                <li class="fw-normal pb-1"><strong>Retail:</strong> Optimize Offering and Grow Sales</li>
+                <li class="fw-normal pb-1"><strong>Restaurants:</strong> Identify Optimal Locations, Menus</li>
+                <li class="fw-normal pb-1"><strong>Real Estate:</strong> Identify Best Locations for Your Clients</li>
+                <li class="fw-normal pb-1"><strong>Investment Funds:</strong> Predict Stock Performance</li>
+              </ul>
+              <button class="btn-speak fs-5 w-50 rounded-pill text-white border-none py-3 mt-5">Speak With Our Experts</button>
+            </div>
+              <img class="w-50" src="/images/img2.png">  
+          </div>
+<!-- Fuel and Convenience -->
+          <div class="companyFeaturesWrapper">
+            <div class="companyFeatures container d-flex align-items-center  mt-5 justify-content-between">
+              <div class="text-start d-flex flex-column w-50">
+                <p class="mb-0 fs-4 fw-normal"><i class="fa-solid fa-gas-pump me-2"></i>Improve Pricing and Site Selection</p>
+                <p class="fs-1">Fuel and Convenience</p>
+                <p class="fw-normal pb-1">Profit boosts by 3-15% when you know where your customers shop, have reliable competitor fuel pricing,  and which In-store promo will drive most footfalls. Transform Site Selection and Fuel Pricing. </p>
+
+                <a href="#" class="LearnMore text-center"
+                >Learn More ></a
+              >
+
+                <p class="mb-0 my-5 mb-1 fs-5">See also</p>
+
+              <ul class="list-unstyled fs-5">
+                <li class="fw-normal pb-1"><strong class="text-info">Fuel Pricing</strong> with reliable competitor data</li>
+                <li class="fw-normal pb-1"><strong  class="text-info">Site Selection</strong> with margin and volume estimates</li>
+                <li class="fw-normal pb-1"><strong  class="text-info">In-Store</strong> to drive higher In-store conversion from fuel</li>
+                <li class="fw-normal pb-1"><strong  class="text-info">Video AI</strong> for customer analysis</li>
+                
+              </ul>
+            </div>
+            <div class="blankCard m-5"></div>
+          </div>
+        </div>
+<!-- EV Network  -->
+        <div class="companyFeaturesWrapper">
+          <div class="companyFeatures container d-flex align-items-center  mt-5 justify-content-between">
+            <div class="text-start d-flex flex-column w-50">
+              <p class="mb-0 fs-4 fw-normal"><i class="fa-solid fa-bolt me-2"></i></i>Optimize EV station placement</p>
+              <p class="fs-1">EV Network</p>
+              <p class="fw-normal pb-1">Identify the most profitable sites for EV chargers by analyzing the ratio of electric vehicles to available chargers in an area. Gain insights on top-selling products and local preferences for maximum impact.</p>
+
+              <a href="#" class="LearnMore text-center"
+              >Learn More ></a
+            >
+
+              <p class="mb-0 my-5 mb-1 fs-5">See also</p>
+
+            <ul class="list-unstyled fs-5">
+              <li class="fw-normal pb-1"><strong class="text-info">Network Planning</strong> simulate and identify the top locations</li>
+              <li class="fw-normal pb-1"><strong  class="text-info">Traffic Intelligence</strong> on vehicle type and count by street</li>
+              <li class="fw-normal pb-1"><strong  class="text-info">Merchandise AI </strong> to find the top product per local preference</li>
+            </ul>
+          </div>
+          <div class="blankCard m-5"></div>
+        </div>
+      </div>
+      
+<!-- Retail  -->
+<div class="companyFeaturesWrapper">
+  <div class="companyFeatures container d-flex align-items-center  mt-5 justify-content-between">
+    <div class="text-start d-flex flex-column w-50">
+      <p class="mb-0 fs-4 fw-normal"><i class="fa-solid fa-store me-2"></i></i>Optimize offerings</p>
+      <p class="fs-1">Retail</p>
+      <p class="fw-normal pb-1">Understand where else your customers shop, and the demographics (income, race, occupation). Select the best store locations through data-driven insights and enhance your marketing efforts with strategic, data-driven campaigns. Gain a competitive edge by understanding your real competition through the analysis of customer behavior.. </p>
+
+      <a href="#" class="LearnMore text-center"
+      >Learn More ></a
+    >
+
+      <p class="mb-0 my-5 mb-1 fs-5">See also</p>
+
+    <ul class="list-unstyled fs-5">
+      <li class="fw-normal pb-1"><strong class="text-info">Network Planning</strong>  simulate and identify the top locations</li>
+      <li class="fw-normal pb-1"><strong  class="text-info">Traffic Intelligence</strong>  on vehicle type and count by street</li>
+      <li class="fw-normal pb-1"><strong  class="text-info">Merchandise AI </strong>  to find the top product per local preference</li>
+    </ul>
+  </div>
+  <div class="blankCard m-5"></div>
+</div>
+</div>
+
+<!-- Restaurent  -->
+<div class="companyFeaturesWrapper">
+  <div class="companyFeatures container d-flex align-items-center  mt-5 justify-content-between">
+    <div class="text-start d-flex flex-column w-50">
+      <p class="mb-0 fs-4 fw-normal"><i class="fa-solid fa-utensils me-2"></i>Identify optimal locations</p>
+      <p class="fs-1">Restaurants</p>
+      <ul class="list-unstyled fs-5 ">
+        <li class="fw-normal pb-1"><strong>Optimal Sites :</strong> Choose locations based on dining trends.</li>
+        <li class="fw-normal pb-1"><strong>Customer Insights :</strong> Tailor menus to local preferences.</li>
+        <li class="fw-normal pb-1"><strong>Mitigate Risks :</strong>Adapt to market trends with data.</li>
+        <li class="fw-normal pb-1"><strong>Personalized Service : </strong> Customize offerings to local tastes.</li>
+      </ul>
+
+      <a href="#" class="LearnMore text-center"
+      >Learn More ></a
+    >
+
+      <p class="mb-0 my-5 mb-1 fs-5">See also</p>
+
+    <ul class="list-unstyled fs-5">
+      <li class="fw-normal pb-1"><strong class="text-info">Network Planning</strong>  simulate and identify the top locations</li>
+      <li class="fw-normal pb-1"><strong  class="text-info">Traffic Intelligence</strong>  on vehicle type and count by street</li>
+      <li class="fw-normal pb-1"><strong  class="text-info">Merchandise AI</strong> to find the top product per local preference</li>
+      
+    </ul>
+  </div>
+  <div class="blankCard m-5"></div>
+</div>
+</div>
+
+<!-- Real Estate -->
+
+<div class="companyFeaturesWrapper">
+  <div class="companyFeatures container d-flex align-items-center  mt-5 justify-content-between">
+    <div class="text-start d-flex flex-column w-50">
+      <p class="mb-0 fs-4 fw-normal"><i class="fa-regular fa-building me-2"></i>Identify highest demand locations</p>
+      <p class="fs-1">Real Estate</p>
+      <ul class="list-unstyled fs-5 ">
+        <li class="fw-normal pb-1"><strong>Prime Locations :</strong>Identify high-demand areas.</li>
+        <li class="fw-normal pb-1"><strong>Smart Site Selection : </strong> Use data to choose profitable sites</li>
+        <li class="fw-normal pb-1"><strong>Market Insight :</strong>Understand neighborhood dynamics.</li>
+        <li class="fw-normal pb-1"><strong>Boost Confidence : </strong>Provide data-driven insights for investor trust.</li>
+      </ul>
+
+      <a href="#" class="LearnMore text-center"
+      >Learn More ></a
+    >
+
+      <p class="mb-0 my-5 mb-1 fs-5">See also</p>
+
+    <ul class="list-unstyled fs-5">
+      <li class="fw-normal pb-1"><strong class="text-info">Network Planning</strong>  simulate and identify the top locations</li>
+      <li class="fw-normal pb-1"><strong  class="text-info">Traffic Intelligence</strong>  on vehicle type and count by street</li>
+      <li class="fw-normal pb-1"><strong  class="text-info">Merchandise AI</strong> to find the top product per local preference</li>
+      
+    </ul>
+  </div>
+  <div class="blankCard m-5"></div>
+</div>
+</div>
+      </div>
+
+      <footer id="skew5" class="cus-div">
+        <div class="content text-white display-4">
+          Footer
+        </div>
+      </footer>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
+    
+  </body>
+</html>
