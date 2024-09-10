@@ -23,4 +23,4 @@ This project demonstrates a responsive webpage crafted with HTML, CSS, and Boots
 
 ## Note
 
-I had to refresh my Bootstrap skills since it’s been a while; I’m more accustomed to using Tailwind CSS. It took me a few hours to get back up to speed.
+As I am more familiar with Tailwind CSS, I needed to refresh my Bootstrap skills, which took a few hours. Consequently, this led to some delays in completing the full UI clone. Thank you for your understanding.
